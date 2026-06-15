@@ -18,7 +18,7 @@ let context =
 let prompt = `User instructions: Generate a Chinese Vegetable recipe for ${instructionsInput.value}`;
 let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-let recipeElement = document.querySelector("#recipe");
+let recipeElement = document.querySelector("#chineseVegetableRecipes");
 recipeElement.classList.remove("hidden");
 recipeElement.innerHTML = `<div class="generating">Generating a Chinese Vegetable recipe for ${instructionsInput.value}</div>`;
 
